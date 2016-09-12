@@ -1,0 +1,11 @@
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+    <!-- 定义按钮按下时的图片 -->
+    <item Android:drawable="@mipmap/history_on"
+          Android:state_pressed="true"/>
+    <!-- 定义按钮默认的图片 -->
+    <item Android:drawable="@mipmap/history_off"/>
+
+    <item Android:drawable="@mipmap/history_on"
+          Android:state_checked="true"
+          Android:state_enabled="true"/>
+</selector>

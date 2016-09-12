@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f0f0f0"
+                tools:context=".MainActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="9"
+            android:layout_height="50dp"
+            >
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/titlebar_btn_personal"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bperson"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="35dp"
+                    android:background="@mipmap/person_off"
+                    android:layout_height="29dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tperson"
+                    android:text="个人"
+                    android:textColor="#999999"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:id="@+id/titlebar_btn_history"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/bhistory"
+                    android:layout_width="35dp"
+                    android:background="@mipmap/history_on"
+                    android:layout_height="29dp"
+                    />
+
+                <TextView
+                    android:text="历史"
+                    android:textColor="#00b7ee"
+                    android:layout_width="35dp"
+                    android:id="@+id/thistory"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:id="@+id/titlebar_btn_more"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_marginTop="17dp"
+                    android:id="@+id/bmore"
+                    android:layout_width="35dp"
+                    android:background="@mipmap/more_off"
+                    android:layout_height="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tmore"
+                    android:text="更多"
+                    android:textColor="#999999"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

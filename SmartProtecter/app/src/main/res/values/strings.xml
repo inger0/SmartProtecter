@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartProtector</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="service_hint_address">请输入报修地点</string>
+    <string name="service_hint_phone">请输入您的手机号</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_my_service">MyServiceActivity</string>
+    <string name="title_activity_advice">AdviceActivity</string>
+</resources>

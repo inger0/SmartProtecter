@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="70dp"
+              android:orientation="vertical"
+              android:background="#00b7ee"
+              tools:context="com.example.smartprotector.Activities.LoginActivity"
+    >
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/login_icon"
+        android:id="@+id/iv_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+
+            <ImageView
+                android:background="@mipmap/login_user"
+                android:layout_width="33dp"
+                android:layout_height="29dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/edt_loginAccount"
+                    android:layout_width="match_parent"
+                    android:hint="账号"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:textColorHint="#c2e7f9"
+                    android:layout_height="39dp"/>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            >
+
+            <ImageView
+                android:background="@mipmap/login_password"
+                android:layout_width="29dp"
+                android:layout_height="34dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/edt_loginPassword"
+                    android:layout_width="match_parent"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:paddingLeft="12dp"
+                    android:textColorHint="#c2e7f9"
+                    android:layout_height="39dp"/>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="1dp"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btn_login"
+            android:background="@mipmap/login_button"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:textSize="23dp"
+            android:layout_marginRight="30dp"
+            android:text="登 录"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="35dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_findPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="#ffffff"
+                android:text="忘记密码"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="#ffffff"
+                android:text="快速注册"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
